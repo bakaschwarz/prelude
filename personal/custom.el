@@ -7,6 +7,9 @@
 ;; Disable the guru minor mode
 (setq prelude-guru nil)
 
+;; Custom keybinds
+(global-set-key (kbd "C-c SPC") 'helm-projectile-ag) ; quick silver search
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
