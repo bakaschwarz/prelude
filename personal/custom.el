@@ -4,17 +4,23 @@
 ;; Disable spell checking
 (setq prelude-flyspell nil)
 
+;; Disable the guru minor mode
+(setq prelude-guru nil)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#3F3F3F" "#CC9393" "#7F9F7F" "#F0DFAF" "#8CD0D3" "#DC8CC3" "#93E0E3" "#DCDCCC"])
  '(custom-safe-themes
    (quote
-    ("badc4f9ae3ee82a5ca711f3fd48c3f49ebe20e6303bba1912d4e2d19dd60ec98" default)))
+    ("ff02e8e37c9cfd192d6a0cb29054777f5254c17b1bf42023ba52b65e4307b76a" "badc4f9ae3ee82a5ca711f3fd48c3f49ebe20e6303bba1912d4e2d19dd60ec98" default)))
  '(fci-rule-color "#383838")
+ '(global-linum-mode t)
  '(helm-M-x-fuzzy-match t)
  '(nrepl-message-colors
    (quote
@@ -47,4 +53,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#3F3F3F" :foreground "#DCDCCC" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "unknown" :family "Operator Mono"))))
- '(font-lock-type-face ((t (:foreground "#7CB8BB" :slant italic)))))
+ '(font-lock-type-face ((t (:foreground "#7CB8BB" :slant italic))))
+ '(linum ((t (:background "#3F3F3F" :foreground "#9FC59F" :slant italic)))))
