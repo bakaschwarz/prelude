@@ -1,11 +1,9 @@
 ;; Custom packages
 (prelude-require-package 'ag)
+(prelude-require-package 'smooth-scroll)
 
 ;; Disable spell checking
 (setq prelude-flyspell nil)
-
-;; Disable the guru minor mode
-(setq prelude-guru nil)
 
 ;; Custom keybinds
 (global-set-key (kbd "C-c SPC") 'helm-projectile-ag) ; quick silver search
@@ -25,9 +23,11 @@
  '(fci-rule-color "#383838")
  '(global-linum-mode t)
  '(helm-M-x-fuzzy-match t)
+ '(magit-pull-arguments (quote ("--rebase")))
  '(nrepl-message-colors
    (quote
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
+ '(prelude-guru nil)
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote
